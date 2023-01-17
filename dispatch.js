@@ -229,6 +229,6 @@
       this.oneway = data.oneway;
       this.wheelchair = data.wheelchair;
       this.itinerary = new Itinerary();
-      itinerary.parse(data.itinerary);
+      this.itinerary.parse(data.itinerary);
     }
   }
