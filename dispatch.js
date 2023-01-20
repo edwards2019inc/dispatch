@@ -71,8 +71,8 @@
               duration_since_last_marker = 0;
               
             }
-            duration_since_last_marker += this.drive_durations[stop] * 60000;
-            this.total_duration += this.drive_durations[stop]*60000;
+            duration_since_last_marker += this.drive_durations[stop] * 1000;
+            this.total_duration += this.drive_durations[stop]*1000;
             if(arrive > -1){
               if(last_marker_time > -1){
                 let surplus = arrive - ( last_marker_time + duration_since_last_marker + this.wait_service_times_after[stop]);
