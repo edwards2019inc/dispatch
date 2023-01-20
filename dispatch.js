@@ -203,7 +203,7 @@ function Itinerary(){
     this.departure_times=data.departure_times,
     this.arrival_times=data.arrival_times,
     this.wait_service_times_before=data.wait_service_times_before,
-    this.wait_service_times_after=data.wait_service_times_after = [];
+    this.wait_service_times_after=data.wait_service_times_after,
     this.drive_durations=data.drive_durations,
     this.drive_distances=data.drive_distances,
     this.directions=data.directions,
