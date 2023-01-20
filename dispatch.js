@@ -192,6 +192,8 @@
       console.log("Parsing itinerary from string:");
 	  console.log(datastr);
       let data = JSON.parse(datastr);
+	  console.log("Parsed data.bounds:");
+	  console.log(data.bounds);
       this.stops = data.stops;
       this.departure_times=data.departure_times,
       this.arrival_times=data.arrival_times,
