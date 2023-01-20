@@ -184,10 +184,13 @@
           surplus_time:this.surplus_time,
           bounds:this.bounds
       }
-      return JSON.stringify(data);
+	  var datastr = JSON.stringify(data);
+	  console.log(datastr);
+      return datastr;
     }
     this.parse = function(datastr){
-
+      console.log("Parsing itinerary from string:");
+	  console.log(datastr);
       let data = JSON.parse(datastr);
       this.stops = data.stops;
       this.departure_times=data.departure_times,
